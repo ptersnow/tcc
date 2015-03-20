@@ -1,0 +1,17 @@
+\pagestyle{plain}
+
+\chapter{Considerações Finais} \label{sec:conclusao}
+
+Este trabalho abordou o Problema da Mochila clássico e uma variação do mesmo, denominada Problema da Mochila Compartimentada. Ambos são problemas de otimização combinatória pertencentes à classe NP-difícil e possuem importantes aplicações práticas.
+
+Após uma revisão bibliográfica sobre as principais estratégias para resolução de Problemas da Mochila, vários experimentações foram realizadas a fim de avaliar estas técnicas e melhorar o tempo de resposta dos métodos tradicionais. Visto que estes problemas aparecem como sub-problemas de vários outros, justifica-se a tentativa de encontrar heurísticas e algoritmos aproximados com boas razões de aproximação para resolvê-los. A proposta de implementação de um algoritmo genético para esses problemas contribui de duas formas: bom desempenho quando comparado com às implementações tradicionais e boas aproximações com relação aos valores retornados como saída.
+
+Para o Problema da Mochila 0-1, o algoritmo genético apresentou bons resultados, retornando a solução ótima na maior parte dos casos e com bom desempenho. Utilizamos a razão de aproximação para avaliar quão boa foi a resposta dos nossos métodos. No caso do Problema da Mochila 0-1, a razão de aproximação obtida foi igual a 1,13. Com relação ao Problema da Mochila Compartimentada, o algoritmo genético apresentou bom desempenho, porém não há como avaliar com precisão quão próxima da solução ótima está a resposta do algoritmo, dado que o resultado retornado foi comparadado com a resposta do programa utilizando a heurística da decomposição, que não garante a solução ótima em todos os casos. Ainda assim, o algoritmo genético  retornou, em média, soluções com uma razão de aproximação próxima a 2.
+
+Embora os algoritmos genéticos tenham apresentado boas razões de aproximação, não podemos dizer que sejam algoritmos aproximativos, pois os resultados apresentados são empíricos e não poderemos garantí-los sempre. 
+
+Citamos como futuro trabalho a melhoria dos parâmetros do algoritmo genético para o Problema da Mochila Compartimentada, para que venha a convergir mais rapidamente à solução ótima. Também seria interessante estender o algoritmo genético para que retornasse soluções sem considerar as simplificações na modelagem matemática que aqui foram adotadas.
+
+% \section{Contribuições do Trabalho}
+% \section{Limitações do Trabalho}
+% \section{Trabalhos futuros} \label{sec:trabafuturos}

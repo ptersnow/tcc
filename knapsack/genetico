@@ -1,0 +1,10 @@
+O algoritmo começa criando uma população inicial de 30 indivíduos e, para cada indivíduo, o valor da mochila não é ultrapassado. A seguir é feita uma ordenção para que o melhor indivíduo fica na posição 0. Depois dessa ordenação, o algoritmo entra no laço que faz:
+
+-> Troca a população atual pela anterior;
+-> Faz o cruzamento entre os indivíduos da população atual;
+-> Seleciona o melhor indivíduo e o armazena no último endereço do vetor;
+-> Faz a ordenção do vetor;
+
+Cross_over:
+	Para cada indivíduo, gera um número aleatório e, se o valor gerado é superior a 75, é gerado um novo valor aleatório. Esse novo valor será o limite da cópia de um dos pais e a partir desse valor será copiado os cromossomos do outro pai. Após ter sido feita a cópia, ou não, mais dois números aleatórios são gerados, um para verificar se é menor que 5, e o segundo para fazer uma modificação em algum cromossomo do indivíduo.
+
